@@ -29,9 +29,8 @@ npm run lint
 ### Install Plugins
 ```
 axios
-vuex<br>
-bootstrap-vue<br>
-
+vuex
+bootstrap-vue
 ```
 
 ### Customize configuration
