@@ -1,18 +1,19 @@
 <template>
   <div id="app">
-    <header id="sticky-header">
-      <nav class="header-nav">
-        <ul>
-          <li><router-link to="/">Home</router-link> |</li>
-          <li><router-link to="/about">About</router-link></li>
-        </ul>
-      </nav>
-    </header>
-    <section>
-      <router-view/>
-    </section>
+    <StickyHeader></StickyHeader>
+    <router-view/>
   </div>
 </template>
+
+<script>
+import StickyHeader from './components/StickyHeader.vue'
+
+export default {
+  components: {
+    StickyHeader
+  }
+}
+</script>
 
 <style lang="scss">
 $red: red;
