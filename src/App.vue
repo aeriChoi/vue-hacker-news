@@ -7,7 +7,6 @@
 
 <script>
 import StickyHeader from './components/StickyHeader.vue'
-
 export default {
   components: {
     StickyHeader
@@ -23,17 +22,17 @@ $red: red;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $red;
+}
 
-  .header-nav {
-    padding: 30px;
+#nav {
+  padding: 30px;
 
-    a {
-      font-weight: bold;
-      color: #2c3e50;
+  a {
+    font-weight: bold;
+    color: #2c3e50;
 
-      &.router-link-exact-active {
-        color: #42b983;
-      }
+    &.router-link-exact-active {
+      color: #42b983;
     }
   }
 }
