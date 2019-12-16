@@ -1,4 +1,4 @@
-# vue-hacker-news
+# Vue Hacker News
 
 ## Project setup
 ```
@@ -23,6 +23,15 @@ npm run test:unit
 ### Lints and fixes files
 ```
 npm run lint
+```
+
+
+### Install Plugins
+```
+axios
+vuex<br>
+bootstrap-vue<br>
+
 ```
 
 ### Customize configuration
