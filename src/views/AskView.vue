@@ -1,13 +1,20 @@
 <template>
   <div id="ask">
-    <li v-for="item in this.$store.state.ask" v-bind:key="item.id">
+    <li v-for="item in getAskList" v-bind:key="item.id">
       {{ item }}
     </li>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
+  computed: {
+    ...mapGetters([
+      'getAskList'
+    ])
+  },
   created () {
     this.$store.dispatch('GET_ASK')
   }

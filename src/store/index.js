@@ -10,6 +10,17 @@ export default new Vuex.Store({
     jobs: [],
     ask: []
   },
+  getters: {
+    getNewsList (state) {
+      return state.news
+    },
+    getJobsList (state) {
+      return state.jobs
+    },
+    getAskList (state) {
+      return state.ask
+    }
+  },
   mutations: {
     SET_NEWS (state, news) {
       state.news = news
