@@ -1,28 +1,15 @@
 <template>
   <div id="ask">
-    <ul>
-      <li v-for="ask in asks" v-bind:key="ask.id">{{ ask }}</li>
-    </ul>
+    <li v-for="item in this.$store.state.ask" v-bind:key="item.id">
+      {{ item }}
+    </li>
   </div>
 </template>
 
 <script>
-import { getAskList } from '../api/index.js'
-
 export default {
-  data () {
-    return {
-      asks: []
-    }
-  },
   created () {
-    getAskList()
-      .then(response => {
-        this.asks = response.data
-      })
-      .catch(error => {
-        console.log(error)
-      })
+    this.$store.dispatch('GET_ASK')
   }
 }
 </script>
