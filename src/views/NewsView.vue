@@ -1,7 +1,7 @@
 <template>
-  <section id="news">
-    <ul>
-      <li v-for="item in getNewsList" v-bind:key="item.id">
+  <section id="news" class="list-sec">
+    <ul class="list-box">
+      <li class="list-item" v-for="item in getNewsList" v-bind:key="item.id">
         {{ item }}
       </li>
     </ul>
@@ -10,6 +10,8 @@
 
 <script>
 import { mapGetters } from 'vuex'
+
+import '../assets/style/list-item.scss'
 
 export default {
   computed: {
