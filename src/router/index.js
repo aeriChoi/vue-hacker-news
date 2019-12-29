@@ -29,7 +29,7 @@ const routes = [
     component: JobsView
   },
   {
-    path: '/user',
+    path: '/user/:id',
     name: 'UserView',
     component: UserView
   },
