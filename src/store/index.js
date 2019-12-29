@@ -9,7 +9,8 @@ export default new Vuex.Store({
   state: {
     news: [],
     jobs: [],
-    ask: []
+    ask: [],
+    user: {}
   },
   getters: {
     getNewsList (state) {
@@ -20,6 +21,9 @@ export default new Vuex.Store({
     },
     getAskList (state) {
       return state.ask
+    },
+    getUserInfo (state) {
+      return state.user
     }
   },
   mutations,

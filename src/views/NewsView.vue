@@ -4,7 +4,7 @@
       <li class="list-item" v-for="item in getNewsList" v-bind:key="item.id">
         <p class="domain-info-box">
           <span class="des-icon">
-            <font-awesome-icon icon="home" size="4px" />
+            <font-awesome-icon icon="home" />
           </span>
           <span class="domain-des-url">
             {{ item.domain }}
@@ -21,7 +21,7 @@
           <ul class="info-list">
             <li class="info-list-item">
               <span class="des-icon">
-                <font-awesome-icon :icon="['far', 'user']" size="4px" />
+                <font-awesome-icon :icon="['far', 'user']" />
               </span>
               <span class="des-text user-name">
                 <router-link v-bind:to="`/user/${item.user}`">{{ item.user }}</router-link>
@@ -29,7 +29,7 @@
             </li>
             <li class="info-list-item">
               <span class="des-icon">
-                 <font-awesome-icon :icon="['far', 'clock']" size="4px" />
+                 <font-awesome-icon :icon="['far', 'clock']" />
               </span>
               <span class="des-text time-ago">
                 {{ item.time_ago }}
@@ -37,7 +37,7 @@
             </li>
             <li class="info-list-item">
               <span class="des-icon">
-                <font-awesome-icon :icon="['far', 'comment']" size="4px" />
+                <font-awesome-icon :icon="['far', 'comment']" />
               </span>
               <span class="des-text comments">
                 {{ item.comments_count }}

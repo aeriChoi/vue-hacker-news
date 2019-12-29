@@ -1,4 +1,4 @@
-import { getNewsList, getJobsList, getAskList } from '../api/index.js'
+import { getNewsList, getJobsList, getAskList, getUserInfo } from '../api/index.js'
 
 export default {
   GET_NEWS ({ commit }) {
@@ -23,6 +23,15 @@ export default {
     getAskList()
       .then(({ data }) => {
         commit('SET_ASK', data)
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  },
+  GET_USER ({ commit }, name) {
+    getUserInfo(name)
+      .then(({ data }) => {
+        commit('SET_USER', data)
       })
       .catch(error => {
         console.log(error)

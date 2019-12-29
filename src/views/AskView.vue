@@ -13,7 +13,7 @@
           <ul class="info-list">
             <li class="info-list-item">
               <span class="des-icon">
-                <font-awesome-icon :icon="['far', 'user']" size="4px" />
+                <font-awesome-icon :icon="['far', 'user']" />
               </span>
               <span class="des-text user-name">
                 {{ item.user }}
@@ -21,7 +21,7 @@
             </li>
             <li class="info-list-item">
               <span class="des-icon">
-                 <font-awesome-icon :icon="['far', 'clock']" size="4px" />
+                 <font-awesome-icon :icon="['far', 'clock']" />
               </span>
               <span class="des-text time-ago">
                 {{ item.time_ago }}
@@ -29,7 +29,7 @@
             </li>
             <li class="info-list-item">
               <span class="des-icon">
-                <font-awesome-icon :icon="['far', 'comment']" size="4px" />
+                <font-awesome-icon :icon="['far', 'comment']" />
               </span>
               <span class="des-text comments">
                 {{ item.comments_count }}
