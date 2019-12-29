@@ -7,6 +7,7 @@
 
 <script>
 import StickyHeader from './components/StickyHeader.vue'
+
 export default {
   components: {
     StickyHeader

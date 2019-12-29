@@ -5,7 +5,50 @@
     margin: 3rem auto;
 
     .list-item {
+      margin: 5px 0;
+      padding: 2rem;
+      border-bottom: 1px solid #ccc;
       list-style: none;
+
+      .domain-info-box {
+        margin-bottom: 20px;
+        color: #999;
+        font-size: .8rem;
+        vertical-align: middle;;
+      }
+
+      .script-title {
+        font-size: 1.5rem;
+         a {
+          color: #757575;
+          text-decoration: none; 
+          outline: none;
+
+          &:hover, &:active {
+            color: #000;
+            text-decoration: none;
+          }
+         }
+      }
+
+      .info-box {
+
+        .info-list {
+          padding: 0;
+          margin: 0;
+          display: flex;
+
+          .info-list-item {
+            margin-right: 15px;
+            color: #999;
+            font-size: 1rem;
+
+            span {
+              vertical-align: middle;
+            }
+          }
+        }
+      }
     }
   }
 }
