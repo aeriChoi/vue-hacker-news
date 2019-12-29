@@ -15,22 +15,12 @@ npm run serve
 npm run build
 ```
 
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-
-### Install Plugins
+### Installed Plugins
 ```
 axios
 vuex
 bootstrap-vue
+vue-fontawesome
 ```
 
 ### Customize configuration
