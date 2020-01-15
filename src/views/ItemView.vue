@@ -1,14 +1,14 @@
 <template>
   <div id="item">
-    item
+    {{ this.$store.state.commentItem }}
   </div>
 </template>
 
 <script>
 export default {
   created () {
-    const askCommentId = this.$route.params.id
-    this.$store.dispatch('GET_ASKCOMMENTID', askCommentId)
+    const CommentItemId = this.$route.params.id
+    this.$store.dispatch('GET_COMMENTITEM', CommentItemId)
   }
 }
 </script>

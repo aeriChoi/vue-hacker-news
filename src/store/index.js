@@ -11,7 +11,7 @@ export default new Vuex.Store({
     jobs: [],
     ask: [],
     user: {},
-    comment: []
+    commentItem: []
   },
   getters: {
     getNewsList (state) {

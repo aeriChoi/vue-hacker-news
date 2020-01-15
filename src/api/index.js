@@ -16,7 +16,7 @@ function getJobsList () {
 function getUserInfo (username) {
   return axios.get(`${config.baseUrl}user/${username}.json`)
 }
-function getAskCommentId (id) {
+function getCommentItem (id) {
   return axios.get(`${config.baseUrl}item/${id}.json`)
 }
 
@@ -25,5 +25,5 @@ export {
   getAskList,
   getJobsList,
   getUserInfo,
-  getAskCommentId
+  getCommentItem
 }

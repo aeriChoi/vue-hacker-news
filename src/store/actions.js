@@ -3,7 +3,7 @@ import {
   getJobsList,
   getAskList,
   getUserInfo,
-  getAskCommentId
+  getCommentItem
 } from '../api/index.js'
 
 export default {
@@ -43,10 +43,10 @@ export default {
         console.log(error)
       })
   },
-  GET_ASKCOMMENTID ({ commit }, id) {
-    getAskCommentId(id)
+  GET_COMMENTITEM ({ commit }, id) {
+    getCommentItem(id)
       .then(({ data }) => {
-        commit('SET_COMMENT', data)
+        commit('SET_COMMENTITEM', data)
       })
       .catch(error => {
         console.log(error)
