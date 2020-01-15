@@ -25,7 +25,7 @@
         <h2>{{ getCommentItem.title }}</h2>
       </section>
       <section class="card-contents">
-        {{ getCommentItem.content }}
+        <div v-html="getCommentItem.content"></div>
       </section>
     </div>
   </div>
@@ -63,7 +63,8 @@ export default {
 
       &.card-title {
         margin-bottom: 1.5rem;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+        color: #757575;
 
         .user-info {
           ul {
@@ -96,6 +97,8 @@ export default {
 
       &.card-contents {
         padding: 0 10px;
+        color: #666;
+        font-size: 1rem;
       }
     }
   }
