@@ -7,7 +7,8 @@
 <script>
 export default {
   created () {
-    const askId = this.$route.params.id
+    const askCommentId = this.$route.params.id
+    this.$store.dispatch('GET_ASKCOMMENTID', askCommentId)
   }
 }
 </script>
