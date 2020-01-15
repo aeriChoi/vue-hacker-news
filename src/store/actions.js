@@ -36,5 +36,14 @@ export default {
       .catch(error => {
         console.log(error)
       })
+  },
+  GET_ASKID ({ commit }, id) {
+    getUserInfo(id)
+      .then(({ data }) => {
+        commit('SET_USER', data)
+      })
+      .catch(error => {
+        console.log(error)
+      })
   }
 }

@@ -6,6 +6,9 @@
 
 <script>
 export default {
+  created () {
+    const askId = this.$route.params.id
+  }
 }
 </script>
 

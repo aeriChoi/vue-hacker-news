@@ -4,9 +4,7 @@
       <li class="list-item" v-for="item in getAskList" v-bind:key="item.id">
         <p class="script-title">
           <strong>
-            <a v-bind:href="item.url" target="_blank">
-              {{ item.title }}
-            </a>
+            <router-link v-bind:to="`item/${item.id}`">{{ item.title }}</router-link>
           </strong>
         </p>
         <div class="info-box">
