@@ -49,6 +49,19 @@
 
             span {
               vertical-align: middle;
+
+              &.des-icon {
+                padding-right: 5px;
+              }
+              &.user-name {
+                a {
+                  color: #999;
+                  &:hover {
+                    color: #42b983;
+                    text-decoration: none;
+                  }
+                }
+              }
             }
           }
         }

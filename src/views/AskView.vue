@@ -16,7 +16,7 @@
                 <font-awesome-icon :icon="['far', 'user']" />
               </span>
               <span class="des-text user-name">
-                {{ item.user }}
+                <router-link v-bind:to="`/user/${item.user}`">{{ item.user }}</router-link>
               </span>
             </li>
             <li class="info-list-item">
