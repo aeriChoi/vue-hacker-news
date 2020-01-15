@@ -25,6 +25,9 @@ export default new Vuex.Store({
     },
     getUserInfo (state) {
       return state.user
+    },
+    getCommentItem (state) {
+      return state.commentItem
     }
   },
   mutations,
