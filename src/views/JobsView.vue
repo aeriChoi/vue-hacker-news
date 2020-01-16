@@ -10,7 +10,7 @@
             <span class="des-icon">
               <font-awesome-icon icon="home" />
             </span>
-            <a class="domain-des-url" :href="job.domain">
+            <a class="domain-des-url" :href="job.url" target="_blank">
               {{ job.domain }}
             </a>
           </p>
