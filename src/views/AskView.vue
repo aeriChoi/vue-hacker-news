@@ -3,7 +3,7 @@
     <ul class="list-box">
       <li class="list-item" v-for="item in getAskList" v-bind:key="item.id">
         <div class="points">
-          {{ item.points }}
+          {{ item.points || 0 }}
         </div>
         <div class="item-info-box">
           <h2 class="script-title">

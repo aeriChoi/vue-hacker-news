@@ -3,7 +3,7 @@
     <ul class="list-box">
       <li class="list-item" v-for="item in getNewsList" v-bind:key="item.id">
         <div class="points">
-          {{ item.points }}
+          {{ item.points || 0 }}
         </div>
         <div class="item-info-box">
           <p class="domain-info-box">
