@@ -18,7 +18,7 @@
           </template>
           <h2 class="script-title">
             <strong>
-              <template v-if="item.url">
+              <template v-if="item.domain">
                 <a v-bind:href="item.url" target="_blank">
                   {{ item.title }}
                 </a>
