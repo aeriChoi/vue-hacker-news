@@ -2,6 +2,9 @@
   <section id="jobs" class="list-sec">
     <ul class="list-box">
       <li class="list-item" v-for="job in getJobsList" v-bind:key="job.id">
+        <div class="points">
+          {{ job.points || 0 }}
+        </div>
         <div class="item-info-box">
           <p class="domain-info-box">
             <span class="des-icon">
