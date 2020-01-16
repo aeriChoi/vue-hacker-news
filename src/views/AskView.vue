@@ -1,6 +1,7 @@
 <template>
-  <section id="ask" class="list-sec">
-    <ul class="list-box">
+  <section id="ask">
+    <ListItem></ListItem>
+    <!-- <ul class="list-box">
       <li class="list-item" v-for="item in getAskList" v-bind:key="item.id">
         <div class="points">
           {{ item.points || 0 }}
@@ -41,24 +42,26 @@
           </div>
         </div>
       </li>
-    </ul>
+    </ul> -->
   </section>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-
-import '../assets/style/list-item.scss'
+// import { mapGetters } from 'vuex'
+import ListItem from '../components/ListItem.vue'
 
 export default {
-  computed: {
-    ...mapGetters([
-      'getAskList'
-    ])
-  },
-  created () {
-    this.$store.dispatch('GET_ASK')
+  components: {
+    ListItem
   }
+  // computed: {
+  //   ...mapGetters([
+  //     'getAskList'
+  //   ])
+  // },
+  // created () {
+  //   this.$store.dispatch('GET_ASK')
+  // }
 }
 </script>
 
